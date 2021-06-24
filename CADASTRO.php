@@ -3,11 +3,11 @@
 
     $sNome = $_GET['txbNome'];
     $sEmail = $_GET['txbEmail'];
-    $nSenha = $_GET['txbSenha']; //pegando os dados dá página HTML
+    $nSenha = $_GET['txbSenha']; // pegando os dados dá página HTML
 
-    $qCadastro = "INSERT INTO usuario (USRNOME, USREMAIL, USRSENHA) VALUES ('$sNome', '$sEmail', '$nSenha');";
-    mysqli_query($cConexao, $qCadastro);
-    mysqli_close($cConexao);
+    $qCadastro = "INSERT INTO usuario (USRNOME, USREMAIL, USRSENHA) VALUES ('$sNome', '$sEmail', '$nSenha');"; // comando que insere os dados
+    mysqli_query($cConexao, $qCadastro); // insere os dados
+    mysqli_close($cConexao); // fecha a conexão com o banco de dados 
 
     echo('seus dados foram gravados');
 ?>
