@@ -13,12 +13,6 @@
             background: #fff;
             margin-left: 2%;
         }
-        a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 5px;
-        }
         section {
             font-size: 25px;
             background: #969687;
@@ -32,12 +26,13 @@
         }
     </style>
     <head>
+        <meta charset="UTF-8">
         <link rel="stylesheet" href="bootstrap.min.css">
     </head>
     <body>
         <section>
             <p>Cadastro</p>
-            <form action="CADASTRO.php">
+            <form action="php/CADASTRO.php">
                 <div style="font-size: 25px;">
                     <label class="form-label">Nome</label><br>
                     <input name="txbNome" type="text" class="form-control" placeholder="nome" style="font-size: 25px;"><br>
@@ -52,7 +47,7 @@
                     <input id="nSenha2" type="password" onblur="fnTestaIgual()" class="form-control md-6" placeholder="confirmar senha" style="font-size: 25px;"><br>
                     
                     <button type="submit" class="btn btn-outline-primary" style="font-size: 25px; width: 49%; margin-bottom: 2%;">enviar</button>
-                    <button type="" class="btn btn-outline-primary" style="font-size: 25px; width: 49%; margin-bottom: 2%;">voltar</button>
+
                 </div>
             </form>
         </section>
